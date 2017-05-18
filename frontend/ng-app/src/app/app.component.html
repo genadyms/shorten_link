@@ -1,3 +1,17 @@
 <h1>
   {{title}}
 </h1>
+
+<h2> All links: </h2>
+<div class='links'>
+  <li *ngFor='let link of links'>
+    <ul>{{link.value}} | {{link.description}}</ul>
+  </li>
+</div>
+
+<h2> User links:</h2>
+<div class='links'>
+  <li *ngFor='let link of userLinks'>
+    <ul>{{link.value}} | {{link.description}} | {{link.clicks}}</ul>
+  </li>
+</div>
